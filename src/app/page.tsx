@@ -1,4 +1,6 @@
 "use client";
+import { faCirclePlus, faEye, faLock, faPen, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 
 const Page = () => {
@@ -46,10 +48,15 @@ const Page = () => {
             <span>Toggle All</span>
           </label>
           <h1 className='font-bold absolute top-6 left-[330px]'>Active Permissions</h1>
+          <FontAwesomeIcon icon={faLock} className="text-gray-600 font-bold absolute top-7 left-[866px]" />
           <h1 className='font-bold absolute top-6 left-[885px]'>All</h1>
+          <FontAwesomeIcon icon={faEye} className="text-gray-600 font-bold absolute top-7 left-[945px]"/>
           <h1 className='font-bold absolute top-6 left-[965px]'>Read</h1>
+          <FontAwesomeIcon icon={faPen} className="text-gray-600 font-bold absolute top-7 left-[1040px]"/>
           <h1 className='font-bold absolute top-6 left-[1060px]'>Write</h1>
+          <FontAwesomeIcon icon={faCirclePlus} className="text-gray-600 font-bold absolute top-7 left-[1132px]"/>
           <h1 className='font-bold absolute top-6 left-[1150px]'>Create</h1>
+          <FontAwesomeIcon icon={faTrash} className="text-gray-600 font-bold absolute top-7 left-[1225px]"/>
           <h1 className='font-bold absolute top-6 left-[1240px]'>Delete</h1>
         </div>
         {Array.from(Array(7), (_, rowIndex) => (
