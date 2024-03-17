@@ -72,8 +72,9 @@ const Page = () => {
                     onChange={() => handleRowToggle(rowIndex)}
                   />
                   <span className={`w-2/5 h-4/5 bg-gray-300 absolute rounded-full left-1 top-1 peer checked:bg-gray-600 peer-checked:left-5 transition-all duration-500 ${toggleChecked[rowIndex] ? 'bg-blue-500' : 'bg-gray-400'}`}></span>
+                  <h1 className='font-bold relative top-[-2px] left-[80px]'>{String.fromCharCode(65 + rowIndex)}</h1>
                 </label>
-                <h1>{String.fromCharCode(65 + rowIndex)}</h1>
+                
               </div>
               <div className="flex items-center space-x-20 relative top-[-20px] left-[-20px] p-8">
               {Array.from(Array(5), (_, colIndex) => (
